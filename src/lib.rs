@@ -7,6 +7,7 @@
 #![feature(alloc_error_handler)]
 #![feature(const_fn)]
 #![feature(const_in_array_repeat_expressions)]
+#![feature(wake_trait)]
 
 extern crate alloc;
 extern crate rlibc;
@@ -18,6 +19,7 @@ pub mod gdt;
 pub mod interrupts;
 pub mod memory;
 pub mod serial;
+pub mod task;
 pub mod vga_buffer;
 
 pub trait Testable {
